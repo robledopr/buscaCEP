@@ -8,12 +8,26 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    
-<h1>Consulta CEP</h1>
-<p>Entre com um cep para obter informações.</p>
-<input type="text">
-<button>PESQUISAR</button>
-<button>LIMPAR</button>
+ 
+        <div id="tudo">
+            <h1>Consulta CEP</h1>
+            <p>Entre com um CEP para obter informação do local.</p>
+            <div id="entradas">
+                <input type="number" name="cep" placeholder="Digite o CEP" id="entrada">
+                
+                    <button type="button" id="botao">Pesquisar</button>
+                    <button type="button" id="botao-limpar">Limpar</button>
+                </div>
+        </div>
+            
+                    <div id="resultado">
+                        <h1>Endereço</h1>
+                        <p>Logradouro: <div id="logradouro"></div> </p>
+                        <p>Bairro:<div id="bairro"></div></p>
+                        <p>Cidade:<div id="cidade"></div></p>
+                        <p>UF:<div id="uf"></div></p>
+                    </div>
+            
 
 </body>
 <script src="buscaCEP.js"></script>
